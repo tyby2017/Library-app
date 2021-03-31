@@ -1,4 +1,5 @@
 * {
+    color: black;
     font-family: monospace;
     margin:0;
     padding:0;
@@ -7,18 +8,33 @@
 
 body {
     min-height:100vh;
-    background: linear-gradient(65deg, rgb(100, 35, 100),rgb(165, 63, 165));
+    background: linear-gradient(45deg,#255954,#3A8C7D);
     display: flex;
     flex-direction:column;
     align-items: center;
 }
 h1 {
-    color:rgb(1, 1, 12);
     margin-top: 100px;
 }
 
 form {
     margin-top:50px;
+}
+input {
+    border-radius: 5px;
+    height:25px;
+    padding-left:10px;
+    background-color: #E8F0FE;
+}
+
+label {
+    margin-left:20px;
+   
+}
+
+.btn-list {
+    color: #260A07;
+    width:100px;    
 }
 
 .container {
@@ -32,7 +48,7 @@ ul {
 
 ul li {
     width: 100%;
-    background-color:rgb(146, 103, 146);
+    background-color:#71D99E;
     height: 20px;
     line-height: 20px;
     padding: 0 5px;
@@ -47,8 +63,7 @@ ul li .remove {
     top:0;
     right:0;
     width:20px;
-    text-align:center;
-    background-color:darksalmon;
+    text-align:center;    
 }
 
 ul li .status {
@@ -57,5 +72,6 @@ ul li .status {
     right:30px;
     width:50px;
     text-align:center;
-    background-color:rgb(223, 119, 84);
+    background-color:#3A8C7D;
+    color:#E8F0FE;
 }

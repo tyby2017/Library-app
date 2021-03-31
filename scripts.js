@@ -55,7 +55,7 @@ myButton.addEventListener('click', (e)=>{
                 button.textContent = 'read';                 
             }
             else{
-                button.style.backgroundColor = 'rgb(223, 119, 84)';
+                button.style.backgroundColor = '#3A8C7D';
                 button.textContent = 'unread';   
             }
         });       
