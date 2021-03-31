@@ -1,19 +1,52 @@
-input {
-    display:block;
+* {
+    font-family: monospace;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
 }
 
-#library-div {
-    height:500px;
-    width:300px;
-    background-color:bisque;
+body {
+    min-height:100vh;
+    background: linear-gradient(65deg, rgb(100, 35, 100),rgb(165, 63, 165));
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+h1 {
+    color:rgb(1, 1, 12);
+    margin-top: 100px;
 }
 
-body{
-    display:flex;
-    justify-content: space-evenly;
+form {
+    margin-top:50px;
 }
 
 .container {
-    display: flex;
-    justify-content: space-between;
+    margin-top:50px;
+}
+
+ul {
+    list-style: none;
+    width:500px;
+}
+
+ul li {
+    width: 100%;
+    background-color:rgb(146, 103, 146);
+    height: 20px;
+    line-height: 20px;
+    padding: 0 5px;
+    position: relative;
+    cursor: pointer;
+    display: block;
+    margin: 5px 0;
+}
+
+ul li span {
+    position:absolute;
+    top:0;
+    right:0;
+    width:20px;
+    text-align:center;
+    background-color:darksalmon
 }
