@@ -26,15 +26,39 @@ myButton.addEventListener('click', (e)=>{
         const myLi = document.createElement('li');
         myLi.innerHTML = inputText;
         list.appendChild(myLi);
+        
+        const status = document.createElement('span');
+        status.innerHTML = 'unread';
+        status.setAttribute('class','status');
+        myLi.appendChild(status);
 
         const mySpan = document.createElement('span');
         mySpan.innerHTML = 'x';
+        mySpan.setAttribute('class','remove');
         myLi.appendChild(mySpan);
+
     }
-    const close = [...document.querySelectorAll('span')];
+    const close = [...document.querySelectorAll('span.remove')];
     close.forEach(button => {
         button.addEventListener('click', ()=>{
             button.parentElement.style.display = 'none';
         });
     });
+
+    const status = [...document.querySelectorAll('span.status')];
+    console.log(status);
+    status.forEach(button => {
+        button.addEventListener('click', ()=>{            
+            if(button.textContent === 'unread')
+            {
+                button.style.backgroundColor = 'green';
+                button.textContent = 'read';                 
+            }
+            else{
+                button.style.backgroundColor = 'rgb(223, 119, 84)';
+                button.textContent = 'unread';   
+            }
+        });       
+    });   
+
 });

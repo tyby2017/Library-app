@@ -42,11 +42,20 @@ ul li {
     margin: 5px 0;
 }
 
-ul li span {
+ul li .remove {
     position:absolute;
     top:0;
     right:0;
     width:20px;
     text-align:center;
-    background-color:darksalmon
+    background-color:darksalmon;
+}
+
+ul li .status {
+    position:absolute;
+    top:0;
+    right:30px;
+    width:50px;
+    text-align:center;
+    background-color:rgb(223, 119, 84);
 }
